@@ -1,0 +1,112 @@
+Person Table Records
+
+insert into person values(101503001, 'Aarti', 'Ashok Kumar' , 9384948488);
+insert into person values(101503002, 'Aastha', 'Manoj' , 9384373488);
+insert into person values(101503003, 'Ayush', 'Pradeep Singh' , 7354967488);
+insert into person values(101503004, 'Abhimanyu', 'Pawan Kumar' , 8196910026);
+insert into person values(101503006, 'Abhishek', 'Dewan Handa' , 9384388433);
+insert into person values(101503007, 'Abhi', 'Vishal' , 8383433434);
+insert into person values(101503008, 'Abhishek', 'Mahesh Chand' , 9653340192);
+insert into person values(101503009, 'Abhishek', 'Barmanand' , 7696272106);
+insert into person values(101503010, 'Adit', 'Hemant' , 7393748488);
+insert into person values(101503011, 'Aditi', 'Sandeep Maheshwari' , 8387437393);
+insert into person values(101503012, 'Aditya', 'Khushwant Singh' , 8982938948);
+insert into person values(101503013, 'Aditya', 'Naresh Gokhroo' , 7874387438);
+insert into person values(101503014, 'Ajay', 'Sanjay' , 9637000038);
+insert into person values(101503015, 'Ajay', 'Raman Kundu' , 8984938848);
+insert into person values(101503016, 'Ajay', 'Arwind' , 7838438438);
+insert into person values(101503017, 'Akhil', 'Rajnish' , 8983938493);
+insert into person values(101503018, 'Akhil', 'Yogesh Kumar' , 9348938943);
+insert into person values(101503019, 'Akhil', 'Pranav Sood' , 8394838439);
+insert into person values(101503020, 'Akkshita', 'Umesh' , 7389739874);
+insert into person values(101503021, 'Aman', 'Alok' , 9849389483);
+insert into person values(101503022, 'Aman', 'Ajit Kataria' , 8483498393);
+
+
+ATM table records
+
+insert into ATM values(10001,'Aarti', null, 'HDFC', 2846836493649192);
+insert into ATM values(10002,'Aastha', null, 'SBI', 6237283728738738);
+insert into ATM values(10003,'Ayush', null, 'ICICI', 7827494878947848);
+
+Tablet table records
+
+insert into Tablet values(20001,1015030045929394,'Apple','IPad','White' );
+insert into Tablet values(20002,1015030025923394,'Samsung','Galaxy3','Black' );
+insert into Tablet values(20003,1015030125919374,'Xiaomi','MI tab','Blue' );
+
+Laptop tale records
+
+insert into Laptop values(30001,8193647389,'Lenovo','G50-80','Black');
+insert into Laptop values(30002,8296747309,'HP','Y67','White');
+insert into Laptop values(30003,8399347339,'Dell','Inspiron','Silver');
+
+Cycle table records
+
+insert into Cycle values(40001,'Avon','Black', 'Panther','Yes');
+insert into Cycle values(40002,'Hero','White', 'Cyclone','No');
+insert into Cycle values(40003,'Octave','Blue', 'DTB','No');
+
+Phone table records
+
+insert into  Phone values(50001,1876539023476854 ,'Apple','IPhone 6','Black');
+insert into  Phone values(50002,1872539123476854 ,'Samsung','S6 edge','Black');
+insert into  Phone values(50003,1874539326446854 ,'Xiaomi','MI4','White');
+
+Storage Devices records
+
+insert into Storage_Devices values(60001,'M80','HP','Black','500GB','hard disk');
+insert into Storage_Devices values(60002,'T80','Sandisk','Brown','120MB','memory card');
+insert into Storage_Devices values(60003,'Y50','Whitehouse','White','8GB','pendrive');
+
+Wallet table records
+
+insert into Wallet values(70001,'Dark Brown','Monalisa');
+insert into Wallet values(70002,'Brown','Woodland');
+insert into Wallet values(70003,'Black','Puma');
+
+Watch table records
+
+insert into Watch values(80001,'Trio', 'Swiss', 'Gold','digital');
+insert into Watch values(80002,'Pixel', 'Rolex', 'Silver','digital');
+insert into Watch values(80003,'Shocker', 'Titan', 'Black','analog');
+
+
+Hosteler table records
+
+insert into Hosteler values('Aarti', 101503001, 'I' ,'girls','3','A','301');
+insert into Hosteler values('Aastha', 101503002, 'I' ,'girls','2','B','201');
+insert into Hosteler values('Abhishek', 101503006, 'L' ,'boys','1','B','111');
+
+Day Scholar table records
+
+insert into  Day_scholar values( 'Adit', 101503010 , 1457,3,'Guru','Patiala',9417134998);
+insert into  Day_scholar values( 'Ayush', 101503003 , 1458,1,'Mahavir','Patiala',9417123998);
+insert into  Day_scholar values( 'Aditya', 101503012 , 1237,4,'Ider','Patiala',7417234498);
+
+Aadhaar Card Table records
+
+insert into Aadhaar_card values( 'Aarti',101503001,90001,'Ashok Kumar',8,12,'olive','Ludhiana','12-July-1996',20, 'male');
+insert into Aadhaar_card values( 'Aastha',101503002,90002,'Manoj',2,10,'Rose','Yamunagar','14-July-1996',20, 'female');
+insert into Aadhaar_card values( 'Ayush',101503003,90003,'Pradeep Singh',5,8,'Jasmine','Gurgaon','11-August-1996',20, 'male');
+
+
+Id card table records
+
+insert into ID_card values('Aarti', 101503001,110001,'Ashok Kumar', 8,12,'olive','Ludhiana', 'A+');
+insert into ID_card values('Aastha',101503002,110002,'Manoj',2,10,'Rose','Yamunagar', 'A-');
+insert into ID_card values( 'Ayush',101503003,110003,'Pradeep Singh',5,8,'Jasmine','Gurgaon','B-');
+
+ownership table records
+
+insert into  ownership values( 'Aarti', 101503001, 10001,30001,null,null,null,null,null,null);
+insert into  ownership values( 'Aastha', 101503002, null,null,20002,null,null,null,null,null);
+insert into  ownership values( 'Ayush', 101503003, null,null,null,null,50003,null,null,null);
+
+
+MainFrame table records
+
+insert into MainFrame values('Aarti', 101503001, 10001,null,null,null,null,null,null,null,'lost','cos','10-Dec-2016 9:00:00', null);
+insert into  MainFrame values('Aastha', 101503002, null,null,20002,null,null,null,null,null,'lost','Audi','9-Dec-2016 12:20:00', null);
+insert into MainFrame values('Ayush', 101503003, null,null,null,null,50003,null,null,null,'lost','Tan','10-Sep-2016 5:30:00', '12-Sep-2016');
+

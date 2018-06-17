@@ -1,0 +1,45 @@
+ATM table
+create table ATM(ID_Number number(20) constraint P_K primary key,First_Name varchar2(20), Last_Name varchar2(20), Bank varchar2(20), Card_number number(20) constraint UNIQ unique);
+
+Tablet Table
+create table Tablet(Id_number number constraint p_k1 primary key,IMEI_number number constraint UNIQ1 unique,Brand varchar2(20),Model varchar2(20),colour varchar2(20));
+
+Laptop table
+create table Laptop(Id_number number constraint p_k2 primary key,Product_id number constraint UNIQ2 unique,Brand varchar2(20),Model varchar2(20),colour varchar2(20));
+
+Cycle table
+create table Cycle(Id_number number constraint p_k3 primary key,Brand varchar2(20),colour varchar2(20), model varchar2(20),gear varchar(10) constraint check_1 check(gear in('Yes','No')));
+
+Phone table
+create table Phone(Id_number number constraint p_k4 primary key ,IMEI_number number constraint UNIQ3 unique ,Brand varchar2(20),model varchar2(20),colour varchar2(20));
+
+Storage_device table
+create table Storage_Devices(Id_number number constraint p_k5 primary key,model varchar2(20),brand varchar2(20),colour varchar2(20),capacity varchar2(20),hardware_type varchar2(20) constraint check_2 check(hardware_type in('pendrive','memory card','hard disk')));
+
+Wallet table
+create table Wallet(Id_number number constraint p_k6 primary key,colour varchar2(20),brand varchar2(20));
+
+Watch table
+create table Watch(Id_number number constraint p_k7 primary key, Model varchar2(20), Brand varchar2(20), colour varchar2(20), Display varchar2(20) constraint check_3 check(Display in('digital','analog')));
+
+Person table
+create table Person(Roll_number number, Name varchar2(20) ,Father_name varchar2(20),Mobile_number number(20), constraint p_k8 primary key(Name,Roll_number) );
+
+Hosteler table
+create table Hosteler(Name varchar2 (20), Roll_number number, Hostel_Name varchar2(20) ,Type varchar2(20) constraints check_4 check(Type in('girls','boys')),Floor varchar2(20),Block varchar(10),Room_number number,constraint f_k1 foreign key (Name,Roll_number) references Person(Name,Roll_Number));
+
+Day_scholar table
+create table Day_scholar(Name varchar2(20), Roll_number number , House_number number,Street_number number,Street_name varchar2(20),City varchar2(20),Guardians_mobile_number number(10),constraint f_k2 foreign key(Name,Roll_number) references Person(Name,Roll_number));
+
+Aadhaar_Card table
+create table Aadhaar_card(Name varchar2(20), Roll_number number,ID_Number number constraint p_k9 primary key, Father_name varchar2(20), House_number number,Street_number number,Street_name varchar2(20),City varchar2(20), Date_of_Birth date,Age number, Gender varchar2(20) constraint check_5 check (Gender in('male','female')), constraint f_k3 foreign key(Name,Roll_number) references Person(Name,Roll_number) on delete cascade);
+
+ID_Card Table
+create table ID_card(Name varchar2(20), Roll_number number, id_number number constraint p_k10 primary key, Father_name varchar2(20), House_number number,Street_number number,Street_name varchar2(20),City varchar2(20), Blood_Group varchar2(20) constraint check_6 check (Blood_Group in('A+','A-','B+','B-','AB+','AB-','O+','O-')), constraint f_k4 foreign key(Name,Roll_number) references Person(Name,Roll_number) on delete cascade);
+
+MainFrame Table
+create table MainFrame(Name varchar2(20), Roll_Number number, ATM_ID_number number references ATM(ID_number),Laptop_ID_number number references Laptop(Id_number),Tablet_id_number number references Tablet(Id_number),cycle_id_number number 	references Cycle(Id_number),Phone_id_number number references Phone(Id_number),Storage_device_id_number number references Storage_Devices(Id_number),Wallet_id_number number references Wallet(Id_number),Watch_id_number number references Watch(Id_number),Status varchar2(20)  constraint check_7 check(Status in('lost','found')),Last_seen varchar2(20), Date_and_time_lost timestamp, Date_and_lost_found timestamp,constraint f_k5 foreign key(Name , Roll_Number) references Person(Name , Roll_Number) on delete cascade);
+
+
+Ownership table
+create table ownership(Name varchar2(20),Roll_number number, ATM_ID_number number references ATM(ID_number),Laptop_ID_number number references Laptop(Id_number),Tablet_id_number number references Tablet(Id_number),cycle_id_number number references Cycle(Id_number),Phone_id_number number references Phone(Id_number),Storage_device_id_number number references Storage_Devices(Id_number),Wallet_id_number number references Wallet(Id_number),Watch_id_number number references Watch(Id_number),constraint f_k6 foreign key(Name,Roll_number) references Person(Name,Roll_number));
