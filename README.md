@@ -1,3 +1,3 @@
-# Lost and Found System
+# Product Security System
 
 The idea behind this project is very simple. What we have done is, we provide the unique Id to each of the students item in the university. So, basically there are several things of a particular students to which we have to give unique Ids. Now with the help of these we binds the roll numbers of the students, So that if any item found with its unique Id we can easily find the student who lost that particular thing. We took the original data from the university and tried to apply on this idea on it (initially we took about 10 students in the database just the get the results and on the basis of result, we will implement it on large scale.)
